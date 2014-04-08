@@ -1,0 +1,14 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\muhammad\documents\visual studio 2013\projects\simpleorientationex\simpleorientationex\obj\debug\intermediatexaml\simpleorientationex.exe" HashGuid="29939e59-a527-185d-fc9c-be293e341962" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactions.dll" HashGuid="95a94f94-3917-d473-4f7c-18c4bd437046" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\behaviorsxamlsdkmanaged\12.0\references\commonconfiguration\neutral\microsoft.xaml.interactivity.dll" HashGuid="d25f59e6-dd81-900a-0dfc-55b39f6898ef" />
+    <ReferenceAssembly PathName="c:\users\muhammad\documents\visual studio 2013\projects\simpleorientationex\packages\prism.storeapps.1.1.0\lib\windows8\microsoft.practices.prism.storeapps.dll" HashGuid="3e349b71-06d3-5719-a9da-de88cf822a9c" />
+    <ReferenceAssembly PathName="c:\users\muhammad\documents\visual studio 2013\projects\simpleorientationex\packages\unity.3.0.1304.1\lib\netcore45\microsoft.practices.unity.netcore.dll" HashGuid="82c9af3b-569e-fc4b-2c9e-311c518134b6" />
+    <ReferenceAssembly PathName="c:\users\muhammad\documents\visual studio 2013\projects\simpleorientationex\simpleorientationex.portable\bin\debug\simpleorientationex.portable.dll" HashGuid="71835984-4026-b1e2-a29e-f28546b96cc1" />
+    <ReferenceAssembly PathName="c:\users\muhammad\documents\visual studio 2013\projects\simpleorientationex\packages\rx-core.2.2.2\lib\windows8\system.reactive.core.dll" HashGuid="ec7f411f-44b1-aa5a-2e4a-567914f585df" />
+    <ReferenceAssembly PathName="c:\users\muhammad\documents\visual studio 2013\projects\simpleorientationex\packages\rx-interfaces.2.2.2\lib\windows8\system.reactive.interfaces.dll" HashGuid="2fd855ee-8440-f81f-a427-ceb8eb15ce8f" />
+    <ReferenceAssembly PathName="c:\users\muhammad\documents\visual studio 2013\projects\simpleorientationex\packages\rx-linq.2.2.2\lib\windows8\system.reactive.linq.dll" HashGuid="502e38d2-b576-853d-d82e-14ef008ed272" />
+    <ReferenceAssembly PathName="c:\users\muhammad\documents\visual studio 2013\projects\simpleorientationex\packages\rx-platformservices.2.2.2\lib\windows8\system.reactive.platformservices.dll" HashGuid="12f6c441-fbed-72cf-36a7-e1ebcee7e082" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

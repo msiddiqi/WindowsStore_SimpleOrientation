@@ -1,0 +1,147 @@
+﻿<Page
+    x:Class="SimpleOrientationEx.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimpleOrientationEx"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:prism="using:Microsoft.Practices.Prism.StoreApps"
+    xmlns:converters="using:SimpleOrientationEx.Converters"
+    xmlns:enums="using:SimpleOrientationEx.Portable.Enums"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <converters:AppOrientationStateEnumConverter x:Key="AppOrientationStateEnumConverter" />
+    </Page.Resources>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+          RenderTransformOrigin="0.5,0.5">
+        
+        <interactivity:Interaction.Behaviors>
+            <core:DataTriggerBehavior Binding="{Binding Orientation.CurrentOrientation, Converter={StaticResource AppOrientationStateEnumConverter}}" 
+                                      ComparisonCondition="Equal"
+                                      Value="Landscape">
+                <core:GoToStateAction StateName="LandscapeState" />
+            </core:DataTriggerBehavior>
+
+            <core:DataTriggerBehavior Binding="{Binding Orientation.CurrentOrientation, Converter={StaticResource AppOrientationStateEnumConverter}}" 
+                                      ComparisonCondition="Equal"
+                                      Value="Portrait">
+                <core:GoToStateAction StateName="PortraitState" />
+            </core:DataTriggerBehavior>
+
+            <core:DataTriggerBehavior Binding="{Binding Orientation.CurrentOrientation, Converter={StaticResource AppOrientationStateEnumConverter}}" 
+                                      ComparisonCondition="Equal"
+                                      Value="ContraLandscape">
+                <core:GoToStateAction StateName="ContraLandscapeState" />
+            </core:DataTriggerBehavior>
+
+            <core:DataTriggerBehavior Binding="{Binding Orientation.CurrentOrientation, Converter={StaticResource AppOrientationStateEnumConverter}}" 
+                                      ComparisonCondition="Equal"
+                                      Value="ContraPortrait">
+                <core:GoToStateAction StateName="ContraPortraitState" />
+            </core:DataTriggerBehavior>
+
+            <core:DataTriggerBehavior Binding="{Binding Orientation.CurrentOrientation, Converter={StaticResource AppOrientationStateEnumConverter}}" 
+                                      ComparisonCondition="Equal"
+                                      Value="Up">
+                <core:GoToStateAction StateName="UpState" />
+            </core:DataTriggerBehavior>
+
+            <core:DataTriggerBehavior Binding="{Binding Orientation.CurrentOrientation, Converter={StaticResource AppOrientationStateEnumConverter}}" 
+                                      ComparisonCondition="Equal"
+                                      Value="Down">
+                <core:GoToStateAction StateName="DownState" />
+            </core:DataTriggerBehavior>
+            
+        </interactivity:Interaction.Behaviors>
+        
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                
+                <VisualStateGroup.Transitions>
+                    <VisualTransition To="LandscapeState" GeneratedDuration="00:00:02" />
+                    <VisualTransition To="PortraitState" GeneratedDuration="00:00:02"  />
+                    <VisualTransition To="ContraLandscapeState" GeneratedDuration="00:00:02" />
+                    <VisualTransition To="ContraPortraitState" GeneratedDuration="00:00:02"  />
+                    <VisualTransition To="UpState" GeneratedDuration="00:00:02"  />
+                    <VisualTransition To="DownState" GeneratedDuration="00:00:02"  />
+                </VisualStateGroup.Transitions>
+                
+                <VisualState x:Name="LandscapeState" >
+                    <Storyboard>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="gridRotateTransform"
+                            Storyboard.TargetProperty="Angle" 
+                            To="0" Duration="0:0:1" FillBehavior="HoldEnd" />
+                    </Storyboard>
+                </VisualState>
+
+                <VisualState x:Name="PortraitState" >
+                    <Storyboard>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="gridRotateTransform"
+                            Storyboard.TargetProperty="Angle" 
+                            To="90" Duration="0:0:1" FillBehavior="HoldEnd" />
+                    </Storyboard>
+                </VisualState>
+
+                <VisualState x:Name="ContraLandscapeState">
+                    <Storyboard>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="gridRotateTransform"
+                            Storyboard.TargetProperty="Angle" 
+                            To="180" Duration="0:0:1" FillBehavior="HoldEnd" />
+                    </Storyboard>
+                </VisualState>
+
+                <VisualState x:Name="ContraPortraitState">
+                    <Storyboard>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="gridRotateTransform"
+                            Storyboard.TargetProperty="Angle" 
+                            To="270" Duration="0:0:1" FillBehavior="HoldEnd" />
+                    </Storyboard>
+                </VisualState>
+
+                <VisualState x:Name="UpState">
+                    <Storyboard>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="gridRotateTransform"
+                            Storyboard.TargetProperty="Angle" 
+                            To="0" Duration="0:0:1" FillBehavior="HoldEnd" />
+                    </Storyboard>
+                </VisualState>
+                
+                <VisualState x:Name="DownState">
+                    <Storyboard>
+                        <DoubleAnimation 
+                            Storyboard.TargetName="gridRotateTransform"
+                            Storyboard.TargetProperty="Angle" 
+                            To="0" Duration="0:0:1" FillBehavior="HoldEnd" />
+                    </Storyboard>
+                </VisualState>
+                
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        
+        <Grid.RenderTransform>
+            <RotateTransform x:Name="gridRotateTransform" />
+        </Grid.RenderTransform>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <TextBox Text="{Binding TextEntered, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" Grid.Row="0" />
+        
+        <TextBlock Text="{Binding TextEntered}" 
+                   Grid.Row="1"
+                   Foreground="White" 
+                   FontSize="100"
+                   TextAlignment="Center"
+                   VerticalAlignment="Center"/>
+    </Grid>
+</Page>

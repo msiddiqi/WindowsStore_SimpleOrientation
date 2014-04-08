@@ -1,0 +1,5 @@
+c:\users\muhammad\documents\visual studio 2013\Projects\SimpleOrientationEx\SimpleOrientationEx.Portable\bin\Debug\SimpleOrientationEx.Portable.dll
+c:\users\muhammad\documents\visual studio 2013\Projects\SimpleOrientationEx\SimpleOrientationEx.Portable\bin\Debug\SimpleOrientationEx.Portable.pdb
+c:\users\muhammad\documents\visual studio 2013\Projects\SimpleOrientationEx\SimpleOrientationEx.Portable\obj\Debug\SimpleOrientationEx.Portable.dll
+c:\users\muhammad\documents\visual studio 2013\Projects\SimpleOrientationEx\SimpleOrientationEx.Portable\obj\Debug\SimpleOrientationEx.Portable.pdb
+c:\users\muhammad\documents\visual studio 2013\Projects\SimpleOrientationEx\SimpleOrientationEx.Portable\obj\Debug\SimpleOrientationEx.Portable.csprojResolveAssemblyReference.cache
